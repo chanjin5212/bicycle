@@ -2,11 +2,11 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chanjin5212.github.io/bicycle",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "next build"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
