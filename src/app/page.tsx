@@ -109,12 +109,12 @@ export default function Home() {
           
           {/* 오른쪽 박스 */}
           <div className="bg-white rounded-lg shadow-lg p-6 max-w-sm z-10">
-            <h2 className="text-xl font-bold mb-3">workflow를 도입하세요</h2>
+            <h2 className="text-xl font-bold mb-3">폐자전거 수거 안내문</h2>
             <p className="text-sm text-gray-600 mb-4">
-              근태 및 업무관리, 업무평가 등 모든 업무를 한 곳에서 손쉽게 관리하세요.
+              폐자전거를 수거해 분류 작업 등을 통해 인천항에서 아프리카 등지로 수출됩니다.
             </p>
             <p className="text-sm text-gray-600 mb-6">
-              업무 생산성을 높이고 시간을 절약하세요!
+              단지 내 골치 덩어리 폐자전거를 처리하세요!
             </p>
             <Button className="w-full bg-emerald-500 hover:bg-emerald-600 hover:text-white cursor-pointer transition-colors">수거문의</Button>
           </div>
