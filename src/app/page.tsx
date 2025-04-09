@@ -142,9 +142,6 @@ export default function Home() {
                 2010년 설립 이후, 저희는 환경 보호와 지속 가능한 비즈니스 운영의 
                 균형을 이루는 데 초점을 맞추고 있습니다.
               </p>
-              <Button variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-50">
-                더 알아보기
-              </Button>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden">
               <Image
@@ -225,11 +222,6 @@ export default function Home() {
                 <p className="text-sm text-emerald-600">2023년 완료</p>
               </CardContent>
             </Card>
-          </div>
-          <div className="text-center mt-10">
-            <Button variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-50">
-              더 많은 사례 보기
-            </Button>
           </div>
         </div>
       </section>
