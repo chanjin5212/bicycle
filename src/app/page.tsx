@@ -92,7 +92,7 @@ export default function Home() {
       {/* 배경 이미지 섹션 (히어로 섹션) - 애니메이션 없음 */}
       <div className="relative h-[800px] w-full">
         <Image
-          src="/bicycle/background.png"
+          src="/background.png"
           alt="Background Image"
           fill
           priority
