@@ -11,8 +11,8 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: 'My Shadcn/UI App',
-  description: 'Built with Next.js, Tailwind CSS, and Shadcn/UI',
+  title: '미래환경',
+  description: '미래환경',
 };
 
 export default function RootLayout({
