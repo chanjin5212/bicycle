@@ -1,6 +1,7 @@
 'use client';
 
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Cases from '@/components/sections/Cases';
@@ -26,6 +27,7 @@ export default function Home() {
       <Contact />
 
       <Analytics/>
+      <SpeedInsights/>
     </main>
   );
 }
