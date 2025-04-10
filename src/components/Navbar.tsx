@@ -83,7 +83,7 @@ export function Navbar() {
   return (
     <nav className="border-b fixed w-full top-0 bg-white z-50">
       <div className="flex h-16 items-center px-4 container mx-auto">
-        <Link href="/" className="font-extrabold text-xl tracking-tight">MyApp</Link>
+        <Link href="/" className="font-extrabold text-xl tracking-tight">미래환경</Link>
         
         {/* 중앙 정렬된 메뉴 */}
         <div className="flex-1 flex justify-center items-center space-x-10">
