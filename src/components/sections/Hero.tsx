@@ -34,9 +34,9 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* 플로팅 팝업 박스 */}
+      {/* 플로팅 팝업 박스 - 모바일에서 중앙 정렬 */}
       {showPopup && (
-        <div className="absolute right-10 md:right-20 top-1/2 transform -translate-y-1/2 bg-white rounded-lg shadow-xl p-6 max-w-sm z-20 backdrop-blur-sm bg-opacity-95">
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-xl p-6 max-w-sm w-[90%] md:w-auto md:max-w-sm md:left-auto md:right-10 md:translate-x-0 z-20 backdrop-blur-sm bg-opacity-95">
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-xl font-bold">폐자전거 수거 안내문</h2>
             <button 
