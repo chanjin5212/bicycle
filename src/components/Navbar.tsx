@@ -14,7 +14,7 @@ export function Navbar() {
   
   // 스크롤 위치에 따라 활성 섹션 업데이트
   const handleScroll = () => {
-    // 프로그래매틱 스크롤 중에는 스크롤 이벤트 무시
+    // 프로그래매틱 스크롤 중에는 스크롤 이벤트 무시 (여기서 중요함!)
     if (isScrollingRef.current) return;
     
     const sections: SectionId[] = ["about", "cases", "quote", "contact"];
@@ -48,9 +48,6 @@ export function Navbar() {
 
   // 링크 클릭 시 해당 섹션으로 스크롤
   const scrollToSection = (sectionId: SectionId) => {
-    // 이미 스크롤 중이면 무시
-    if (isScrollingRef.current) return;
-    
     // 즉시 활성 섹션 업데이트
     setActiveSection(sectionId);
     
@@ -69,14 +66,14 @@ export function Navbar() {
         behavior: 'smooth'
       });
       
-      // 스크롤 애니메이션 완료 후 스크롤 이벤트 다시 활성화 (1.2초 후)
+      // 스크롤 애니메이션 완료 후 스크롤 이벤트 다시 활성화 (1초 후)
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
       
       timeoutRef.current = setTimeout(() => {
         isScrollingRef.current = false;
-      }, 1200); // 스크롤 애니메이션 시간보다 조금 더 길게 설정
+      }, 1000); // 스크롤 애니메이션 시간 동안 스크롤 이벤트 비활성화
     }
   };
   
