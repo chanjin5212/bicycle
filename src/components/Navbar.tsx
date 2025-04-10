@@ -85,15 +85,15 @@ export function Navbar() {
       <div className="flex h-16 items-center px-4 container mx-auto">
         <Link href="/" className="font-extrabold text-xl tracking-tight">미래환경</Link>
         
-        {/* 중앙 정렬된 메뉴 */}
-        <div className="flex-1 flex justify-center items-center space-x-10">
+        {/* 중앙 정렬된 메뉴 - 모바일에서 간격 조정 */}
+        <div className="flex-1 flex justify-center items-center space-x-3 sm:space-x-6 md:space-x-10">
           <a 
             href="#about" 
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("about");
             }}
-            className={`relative hover:text-lime-500 transition-colors py-1 ${
+            className={`relative hover:text-lime-500 transition-colors py-1 text-sm sm:text-base ${
               activeSection === "about" ? "font-bold" : "font-normal"
             }`}
           >
@@ -108,7 +108,7 @@ export function Navbar() {
               e.preventDefault();
               scrollToSection("cases");
             }}
-            className={`relative hover:text-lime-500 transition-colors py-1 ${
+            className={`relative hover:text-lime-500 transition-colors py-1 text-sm sm:text-base ${
               activeSection === "cases" ? "font-bold" : "font-normal"
             }`}
           >
@@ -123,7 +123,7 @@ export function Navbar() {
               e.preventDefault();
               scrollToSection("quote");
             }}
-            className={`relative hover:text-lime-500 transition-colors py-1 ${
+            className={`relative hover:text-lime-500 transition-colors py-1 text-sm sm:text-base ${
               activeSection === "quote" ? "font-bold" : "font-normal"
             }`}
           >
@@ -138,7 +138,7 @@ export function Navbar() {
         <div>
           <Button 
             onClick={() => scrollToSection("contact")}
-            className={`transform active:scale-95 transition-all cursor-pointer ${
+            className={`transform active:scale-95 transition-all cursor-pointer text-sm sm:text-base px-3 py-1 sm:px-4 sm:py-2 ${
               activeSection === "contact" 
                 ? "bg-lime-600 hover:bg-lime-700 hover:text-white" 
                 : "bg-emerald-500 hover:bg-emerald-600 hover:text-white"
