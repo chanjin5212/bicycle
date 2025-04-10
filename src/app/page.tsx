@@ -1,5 +1,6 @@
 'use client';
 
+import { Analytics } from "@vercel/analytics/react"
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Cases from '@/components/sections/Cases';
@@ -23,6 +24,8 @@ export default function Home() {
       
       {/* 수거문의 섹션 */}
       <Contact />
+
+      <Analytics/>
     </main>
   );
 }
