@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div className="relative h-[800px] w-full">
       <Image
-        src="/background.png"
+        src="/bicycle/background.png"
         alt="Background Image"
         fill
         priority
